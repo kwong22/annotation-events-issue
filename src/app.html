@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+  <!-- workaround to let webpack scripts work properly, avoid `Automatic publicPath is not supported in this browser` -->
+  <!-- https://github.com/cornerstonejs/cornerstoneWADOImageLoader/issues/441 -->
+  <script type="text/javascript" src=""></script>
+</html>
